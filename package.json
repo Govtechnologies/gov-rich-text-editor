@@ -1,6 +1,6 @@
 {
   "name": "gov-rich-text-editor",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Tailwind CSS + Tiptap rich text editor for React & Next.js",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -11,9 +11,7 @@
   },
   "files": [
     "dist",
-    "dist/index.mjs",
-    "dist/index.js",
-    "dist/index.d.ts"
+    "README.MD"
   ],
   "exports": {
     "import": "./dist/index.mjs",
