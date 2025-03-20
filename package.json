@@ -1,0 +1,83 @@
+{
+  "name": "gov-rich-text-editor",
+  "version": "1.0.5",
+  "description": "A Tailwind CSS + Tiptap rich text editor for React & Next.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist --clean",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist",
+    "dist/index.mjs",
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "keywords": [
+    "rich-text-editor",
+    "react",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "wysiwyg",
+    "tiptap",
+    "editor",
+    "npm-package"
+  ],
+  "author": "Govind Mishra",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Govtechnologies/gov-rich-text-editor"
+  },
+  "peerDependencies": {
+    "@tiptap/core": "^2.6.6",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.14",
+    "@tiptap/core": "^2.6.6",
+    "@tiptap/extension-bold": "^2.6.6",
+    "@tiptap/extension-bullet-list": "^2.6.6",
+    "@tiptap/extension-code": "^2.6.6",
+    "@tiptap/extension-color": "^2.6.6",
+    "@tiptap/extension-font-family": "^2.6.6",
+    "@tiptap/extension-gapcursor": "^2.6.6",
+    "@tiptap/extension-hard-break": "^2.6.6",
+    "@tiptap/extension-heading": "^2.6.6",
+    "@tiptap/extension-history": "^2.6.6",
+    "@tiptap/extension-italic": "^2.6.6",
+    "@tiptap/extension-list-item": "^2.6.6",
+    "@tiptap/extension-ordered-list": "^2.6.6",
+    "@tiptap/extension-text-align": "^2.6.6",
+    "@tiptap/extension-text-style": "^2.6.6",
+    "@tiptap/extension-typography": "^2.6.6",
+    "@tiptap/extension-underline": "^2.6.6",
+    "@tiptap/pm": "^2.6.6",
+    "@tiptap/react": "^2.6.6",
+    "@tiptap/starter-kit": "^2.6.6",
+    "autoprefixer": "^10.4.21",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.5.0",
+    "postcss": "^8.5.3",
+    "react": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.0.14",
+    "tsup": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.11",
+    "rollup": "^4.36.0",
+    "typescript": "^5.8.2"
+  }
+}
